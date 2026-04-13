@@ -1,0 +1,32 @@
+package algorithms.undirectedgraphs;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Node {
+    private String name;
+    private List<Node> neighbors;
+
+    public Node(String name) {
+        this.name = name;
+        this.neighbors = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Node> getNeighbors() {
+        return neighbors;
+    }
+
+    public void addNeighbor(Node neighbor) {
+        neighbors.add(neighbor);
+    }
+
+    // NY metode til urettede grafer:
+    public void addUndirectedNeighbor(Node other) {
+        this.neighbors.add(other);
+        other.neighbors.add(this);
+    }
+}
