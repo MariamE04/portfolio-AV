@@ -45,3 +45,13 @@ kan finde elementet hurtigt med O(log n).
 
 Skriv en kort forklaring (som kommentar i koden) på *hvorfor* det er tilfældet. Hvad sker der internt i ArrayList
 når du indsætter eller sletter midt i listen? Og hvorfor gælder det samme ikke for LinkedList?
+
+
+### Comparable, equals() og hashcode()
+Lav en entitetsklasse, der implementerer Comparable og som overrider metoderne equals() og hashcode().
+
+Opret et TreeSet og et HashSet, der kan holde objekter af din klasse.
+
+For hver af datastrukturerne skal du tilføje, fjerne og finde et objekt. Skriv kompleksiteten for de tre operationer.
+
+Demonstrer forskellen på de to datastrukturer ved at indsætte, fjerne og finde et antal objekter og tage tid på operationerne.

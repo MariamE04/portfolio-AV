@@ -1,8 +1,10 @@
 package searchandsort;
 
+import java.lang.reflect.Array;
+
 public class BigOExamples {
     public static void main(String[] args) {
-        int n = 10; // Juster n for at se effekten
+      /*  int n = 10; // Juster n for at se effekten
         System.out.println("O(1) - Konstant tid:");
         constantTime(n);
 
@@ -15,11 +17,19 @@ public class BigOExamples {
         System.out.println("\nO(n^2) - Kvadratisk tid:");
         quadraticTime(n);
 
-        System.out.println("--------");
+        System.out.println("--------"); */
+
+        int[] nums = new int[4];
+        nums[0] = 12;
+        nums[1] = 4;
+        nums[2] = 8;
+        nums[3] = 2;
 
         myConstant();
         myLog(1000);
         myLinear(44);
+        // myQuadraticExample(nums);
+        // myBinarySearch(nums, 10);
     }
 
     // O(1) - Konstant tid
@@ -43,7 +53,6 @@ public class BigOExamples {
 
     // O(n^2) - Kvadratisk tid
     public static void quadraticTime(int n) {
-
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.println("Kvadratisk iteration: " + i + "," + j);
@@ -75,13 +84,46 @@ public class BigOExamples {
     //125
     //62 ...
 
-    // O(n)
+    // O(n) - Loop kører n gange → O(n)
     public static void myLinear(int n){
         for(int i = 0; i < n; i++){
             System.out.println(i);
         }
     }
-    // Loop kører n gange → O(n)
+
+    // O(n^2) - Sammenligner alle elementer med hinanden
+    public static void myQuadraticExample(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    System.out.println("Match: " + arr[i]);
+                }
+            }
+        }
+    }
+
+    // O(log n) - Binary Search
+    public static int myBinarySearch(int[] arr, int target) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int mid = (left + right) / 2;
+
+            if (arr[mid] == target) {
+                return mid;
+            }
+
+            if (arr[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        return -1; // ikke fundet
+    }
+// Halverer søgeområdet hver gang → O(log n)
 }
 
 // Tommelfingerregel:

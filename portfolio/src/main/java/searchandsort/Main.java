@@ -13,6 +13,7 @@ public class Main {
         // testSort();
         testListPerformance();
         testSetPerformance();
+        testTreeSetVsHashSetStudents();
     }
 
     private static void testComplexity() {
@@ -223,6 +224,68 @@ public class Main {
         // Forklaring:
         // ArrayList: contains = O(n) (lineær søgning)
         // HashSet: contains = O(1) (hashing → direkte opslag)
+    }
+
+    private static void testTreeSetVsHashSetStudents() {
+        int size = 100000;
+
+        Set<Student> hashSet = new HashSet<>();
+        Set<Student> treeSet = new TreeSet<>();
+
+        // Fylder begge
+        for (int i = 0; i < size; i++) {
+            Student s = new Student("Name" + i, i);
+            hashSet.add(s);
+            treeSet.add(s);
+        }
+
+        Student target = new Student("Test", 50000);
+
+        System.out.println("---- HashSet (Student) ----");
+
+        long start = System.nanoTime();
+        hashSet.contains(target);
+        long stop = System.nanoTime();
+        System.out.println("contains: " + (stop - start) + " ns");
+
+        start = System.nanoTime();
+        hashSet.add(new Student("New", 999999));
+        stop = System.nanoTime();
+        System.out.println("add: " + (stop - start) + " ns");
+
+        start = System.nanoTime();
+        hashSet.remove(target);
+        stop = System.nanoTime();
+        System.out.println("remove: " + (stop - start) + " ns");
+
+
+        System.out.println("\n---- TreeSet (Student) ----");
+
+        start = System.nanoTime();
+        treeSet.contains(target);
+        stop = System.nanoTime();
+        System.out.println("contains: " + (stop - start) + " ns");
+
+        start = System.nanoTime();
+        treeSet.add(new Student("New", 999999));
+        stop = System.nanoTime();
+        System.out.println("add: " + (stop - start) + " ns");
+
+        start = System.nanoTime();
+        treeSet.remove(target);
+        stop = System.nanoTime();
+        System.out.println("remove: " + (stop - start) + " ns");
+
+        // Kompleksitet:
+        // HashSet: O(1)
+        // TreeSet: O(log n)
+
+    // HashSet:
+    // add, remove, contains → O(1) pga hashing
+
+    // TreeSet:
+    // add, remove, contains → O(log n)
+    // fordi den er baseret på et sorteret træ
     }
 }
 
