@@ -1,6 +1,8 @@
 package searchandsort.entities;
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 public class Book implements Comparable<Book> {
 
@@ -44,5 +46,13 @@ public class Book implements Comparable<Book> {
     @Override
     public String toString() {
         return "Book{title='" + title + "', isbn='" + isbn + "'}";
+    }
+
+    public static void main(String[] args) {
+        Set<Book> books = new HashSet<>();
+        books.add(new Book("Java", "123"));
+        books.add(new Book("Python", "456"));
+
+        System.out.println(books.contains(new Book("Test", "123")));
     }
 }
