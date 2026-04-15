@@ -46,8 +46,6 @@ public class Main {
 
         System.out.println("------ Mine egne metoder ------");
 
-        // DINE METODER
-
         // O(1)
         start = System.currentTimeMillis();
         BigOExamples.myConstant();
@@ -71,7 +69,7 @@ public class Main {
         List<Student> students = new ArrayList<>();
         Factory.fillWithStudents(students, 100000);
 
-        int targetId = 99999; // sidst i listen, så forskellen er tydelig!
+        int targetId = 99999;
 
         // Lineær søgning
         long start = System.currentTimeMillis();
