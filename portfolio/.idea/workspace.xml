@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="ændring i Book">
+      <change afterPath="$PROJECT_DIR$/src/main/java/searchandsort/SortEx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/entities/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Book">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Book" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="searchandsort.entities.Book" />
       <module name="portfolio" />
@@ -98,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Book" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Book" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +123,8 @@
       <workItem from="1776076957848" duration="5893000" />
       <workItem from="1776164117908" duration="80000" />
       <workItem from="1776164210671" duration="2923000" />
-      <workItem from="1776262762920" duration="2065000" />
+      <workItem from="1776262762920" duration="2100000" />
+      <workItem from="1776335693903" duration="5170000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -147,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776167048213</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ændring i Book">
+      <option name="closed" value="true" />
+      <created>1776272282059</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776272282059</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
