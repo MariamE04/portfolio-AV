@@ -55,3 +55,42 @@ Opret et TreeSet og et HashSet, der kan holde objekter af din klasse.
 For hver af datastrukturerne skal du tilføje, fjerne og finde et objekt. Skriv kompleksiteten for de tre operationer.
 
 Demonstrer forskellen på de to datastrukturer ved at indsætte, fjerne og finde et antal objekter og tage tid på operationerne.
+
+
+## NOTER
+### OPG 2 ArrayList vs LinkedList
+**ArrayList vs LinkedList:**
+- ArrayList er baseret på et array i hukommelsen.
+- Det betyder at man kan tilgå elementer direkte via index → O(1).
+- Når man indsætter eller sletter i midten, skal alle efterfølgende elementer rykkes → O(n).
+
+**LinkedList består af noder, hvor hver node peger på den næste.**
+- For at finde et element skal man traversere listen → O(n).
+- Indsættelse og sletning er hurtig, når man først er ved positionen,
+- fordi man kun ændrer links mellem noder.
+
+**Derfor:**
+- ArrayList → hurtig til get(), langsom til add/remove i midten
+- LinkedList → langsom til get(), men fleksibel til indsættelse/sletning
+
+### OPG 2 søgning
+**ArrayList vs HashSet (contains):**
+
+**ArrayList bruger lineær søgning → O(n).** 
+- Det betyder at den skal gennemgå elementerne én efter én.
+
+**HashSet bruger hashing → O(1).**
+- Elementets hash bruges til at finde det direkte, uden at gennemgå hele datastrukturen.
+
+**Derfor:**
+- HashSet er meget hurtigere til contains() end ArrayList.
+
+### OPG 2 add/ delete
+**Vigtig pointe:**
+- Selvom LinkedList er god til indsættelse og sletning, er den stadig langsom i praksis, fordi man først skal finde positionen (O(n)).
+
+- Derfor ser man ofte at ArrayList bruges mest i praksis, medmindre man har mange indsættelser/sletninger i starten af listen.
+
+**Konklusion:**
+- Valg af datastruktur har stor betydning for performance.
+- Den samme operation kan have forskellig kompleksitet afhængigt af datastrukturen.
