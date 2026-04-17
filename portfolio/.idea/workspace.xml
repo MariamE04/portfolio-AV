@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="fikset min main.">
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="bubble sort (opg 1 færdig)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio_exercises/searchandsort/sort.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/searchandsort/sort.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/SortExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/SortExamples.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +126,7 @@
       <workItem from="1776262762920" duration="2100000" />
       <workItem from="1776335693903" duration="6112000" />
       <workItem from="1776419590288" duration="1973000" />
+      <workItem from="1776422312629" duration="3124000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -166,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776342049747</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="bubble sort (opg 1 færdig)">
+      <option name="closed" value="true" />
+      <created>1776422487848</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776422487848</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +187,7 @@
     <MESSAGE value="Opgave 2 færdig" />
     <MESSAGE value="ændring i Book" />
     <MESSAGE value="fikset min main." />
-    <option name="LAST_COMMIT_MESSAGE" value="fikset min main." />
+    <MESSAGE value="bubble sort (opg 1 færdig)" />
+    <option name="LAST_COMMIT_MESSAGE" value="bubble sort (opg 1 færdig)" />
   </component>
 </project>

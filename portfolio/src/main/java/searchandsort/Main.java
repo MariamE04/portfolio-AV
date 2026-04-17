@@ -14,10 +14,11 @@ public class Main {
         // testSetPerformance();
         // testTreeSetVsHashSetStudents();
 
-         //testBubble(10, true, true);
-         //testMerge(10, true, true);
-         testBubbleInt();
+        //testBubble(10, true, true);
+        // testBubbleInt();
 
+        //testMerge(10, true, true);
+        testMergeInt();
     }
 
     private static void testComplexity() {
@@ -148,7 +149,26 @@ public class Main {
         if (time) System.out.println("Merge Sort - tid: " + (stop - start) + " ms");
     }
 
-    // Hjælpemetoder til udskrift
+    /// OPG 2
+    private static void testMergeInt() {
+
+        int[] arr = {5, 2, 8, 1, 3};
+
+        System.out.println("Før:");
+        for (int n : arr) {
+            System.out.print(n + " ");
+        }
+
+        SortExamples.mergeSortInt(arr);
+
+        System.out.println("\nEfter:");
+        for (int n : arr) {
+            System.out.print(n + " ");
+        }
+    }
+
+
+    /// Hjælpemetoder til udskrift
     private static void printList(String label, List<Student> list) {
         System.out.println(label + ": ");
         for(Student s:list){
@@ -174,8 +194,7 @@ public class Main {
         return arr;
     }
 
-    //// OPGAVE 2
-
+    //// OPGAVE 2 Kompleksitet
     private static void testListPerformance() {
         int size = 500000;
 

@@ -19,7 +19,7 @@ public class SortExamples {
         }
     }
 
-
+    /// OPG 1
     public static void bubbleSortInt(int[] arr){
 
         int n = arr.length;
@@ -136,6 +136,36 @@ public class SortExamples {
         }
     }
 
+    /// OPG 2
+    public static void mergeSortInt(int[] arr){
+        // Base case
+        if(arr.length < 2){
+            return;
+        }
+
+        int mid = arr.length / 2;
+
+        //Split array
+        int[] left = new int[mid];
+        int[] right = new int[arr.length - mid];
+
+        // Kopier værdier
+        for (int i = 0; i < mid; i++) {
+            left[i] = arr[i];
+        }
+
+        for (int i = mid; i < arr.length; i++) {
+            right[i - mid] = arr[i];
+        }
+
+        // Rekursion
+        mergeSortInt(left);
+        mergeSortInt(right);
+
+        // Merge
+        mergeInt(arr, left, right);
+    }
+
     public static void mergeSortList(List<Student> students) {
         if (students.size() > 1) {
             int mid = students.size() / 2;
@@ -176,17 +206,37 @@ public class SortExamples {
         arr[j] = temp;
     }
 
+    private static void mergeInt(int[] arr, int[] left, int[] right) {
+
+        int i = 0; // samlet array
+        int l = 0; // venstre
+        int r = 0; // højre
+
+        // Sammenligner og indsætter i rækkefølge
+        while (l < left.length && r < right.length) {
+
+            if (left[l] <= right[r]) {
+                arr[i] = left[l];
+                l++;
+            } else {
+                arr[i] = right[r];
+                r++;
+            }
+            i++;
+        }
+
+        // Rest fra venstre
+        while (l < left.length) {
+            arr[i] = left[l];
+            l++;
+            i++;
+        }
+
+        // Rest fra højre
+        while (r < right.length) {
+            arr[i] = right[r];
+            r++;
+            i++;
+        }
+    }
 }
-
-
-// Hvad sorteres de studerende efter?
-//De sorteres efter deres id, fordi der sammenlignes med getId().
-
-// Hvad gør Collections.swap()?
-//Den bytter to elementer i listen, så de kommer i korrekt rækkefølge.
-
-// Hvad styrer den ydre løkke?
-//Den ydre løkke styrer hvor mange gange listen gennemløbes.
-
-// Hvad styrer den indre løkke?
-//Den indre løkke styrer hvilke elementer der sammenlignes i hvert gennemløb.
