@@ -14,8 +14,9 @@ public class Main {
         // testSetPerformance();
         // testTreeSetVsHashSetStudents();
 
-         testBubble(10, true, true);
-         testMerge(10, true, true);
+         //testBubble(10, true, true);
+         //testMerge(10, true, true);
+         testBubbleInt();
 
     }
 
@@ -89,6 +90,26 @@ public class Main {
         if (print) printList("Bubble Sort - efter", list);
         if (time) System.out.println("Bubble Sort - tid: " + (stop - start) + " ms");
     }
+
+    ///  OPGAVE 1 bubble sort
+    private static void testBubbleInt() {
+
+        int[] arr = {5, 2, 8, 1, 3};
+
+        System.out.println("Før:");
+        for (int n : arr) {
+            System.out.print(n + " ");
+        }
+
+        // Kalder metode
+        SortExamples.bubbleSortInt(arr);
+
+        System.out.println("\nEfter:");
+        for (int n : arr) {
+            System.out.print(n + " ");
+        }
+    }
+
 
     private static void testHeap(int size, boolean time, boolean print) {
         List<Student> list = new ArrayList<>();

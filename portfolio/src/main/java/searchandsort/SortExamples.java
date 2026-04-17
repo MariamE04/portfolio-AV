@@ -4,14 +4,35 @@ import searchandsort.entities.Student;
 
 import java.util.*;
 
+import static java.util.Collections.swap;
+
 public class SortExamples {
 
     public static void bubbleSort(List<Student> students) {
         int n = students.size();
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (students.get(j).getId() > students.get(j + 1).getId()) {
-                    Collections.swap(students, j, j + 1);
+        for (int i = 0; i < n - 1; i++) { // hvor mange gange hele processen køres (gentager indtil alt er sorteret)
+            for (int j = 0; j < n - i - 1; j++) { // hvilke elementer vi sammenligner (- i = ignorerer de sidste elementer (de er allerede sorteret))
+                if (students.get(j).getId() > students.get(j + 1).getId()) { //  sammenligner ID:  sorteres studerende efter id (stigende)
+                    swap(students, j, j + 1); // bytter plads på de to studerende: stor ID ryger bagud, lille ID ryger frem
+                }
+            }
+        }
+    }
+
+
+    public static void bubbleSortInt(int[] arr){
+
+        int n = arr.length;
+
+        // Vi gennemgår arrayet flere gange
+        for(int i = 0; i < n - 1; i++){
+
+            // Sammenligner naboer
+            for(int j = 0; j < n - i - 1; j++){
+
+                // Hvis forkert rækkefølge → byt
+                if (arr[j] > arr[j + 1]) {
+                    swapInt(arr, j, j + 1);
                 }
             }
         }
@@ -43,10 +64,10 @@ public class SortExamples {
         for (int j = low; j < high; j++) {
             if (students.get(j).getId() <= pivotValue) {
                 i++;
-                Collections.swap(students, i, j);
+                swap(students, i, j);
             }
         }
-        Collections.swap(students, i + 1, high);
+        swap(students, i + 1, high);
         return i + 1;
     }
 
@@ -147,7 +168,25 @@ public class SortExamples {
         }
     }
 
-
-
+    /// hjælpe metoder
+    // Collections.swap kan kun bruges til List, derfor lavede jeg en separat swap-metode til arrays.
+    private static void swapInt(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 
 }
+
+
+// Hvad sorteres de studerende efter?
+//De sorteres efter deres id, fordi der sammenlignes med getId().
+
+// Hvad gør Collections.swap()?
+//Den bytter to elementer i listen, så de kommer i korrekt rækkefølge.
+
+// Hvad styrer den ydre løkke?
+//Den ydre løkke styrer hvor mange gange listen gennemløbes.
+
+// Hvad styrer den indre løkke?
+//Den indre løkke styrer hvilke elementer der sammenlignes i hvert gennemløb.
