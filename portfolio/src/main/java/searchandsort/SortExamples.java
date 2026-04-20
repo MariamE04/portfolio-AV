@@ -48,29 +48,100 @@ public class SortExamples {
         }
     }
 
-    // rekursiv metode
+    // rekursiv metode (kalder sig selv)
     public static void quickSort(List<Student> students, int low, int high) {
-        // base case - vi hopper ud af rekursion hvis low er >=  high
+
+        // base case:
+        // hvis low >= high, stopper vi (listen er allerede sorteret eller har 1 element)
         if (low < high) {
+
+            // partition deler listen op og finder pivotens rigtige plads
             int pivot = partition(students, low, high);
+
+            // sortér venstre side af pivot (alle mindre værdier)
             quickSort(students, low, pivot - 1);
+
+            // sortér højre side af pivot (alle større værdier)
             quickSort(students, pivot + 1, high);
         }
     }
 
     private static int partition(List<Student> students, int low, int high) {
+        // vi vælger sidste element som pivot (det vi sammenligner med)
         int pivotValue = students.get(high).getId();
+
+        // i bruges til at holde styr på hvor de små værdier skal placeres
         int i = low - 1;
+
+        // gennemgå listen fra low til high-1
         for (int j = low; j < high; j++) {
+
+            // hvis nuværende element er mindre end eller lig pivot
             if (students.get(j).getId() <= pivotValue) {
+
+                // flyt grænsen for små elementer
                 i++;
+
+                // byt så det lille element kommer over på venstre side
                 swap(students, i, j);
             }
         }
+        // til sidst placerer vi pivot det rigtige sted (mellem små og store)
         swap(students, i + 1, high);
+
+        // returnerer pivotens index (så vi kan dele videre)
         return i + 1;
     }
 
+    ///  OPG 3 Quick sort
+    // QuickSort til int array
+    public static void intQuickSort(int[] arr, int low, int high){
+
+        // base case: stop hvis arrayet er opdelt nok
+        if(low < high){
+
+            // find pivotens rigtige placering
+            int pivot = partition(arr, low, high);
+
+            // sortér venstre side (mindre tal)
+            intQuickSort(arr, low, pivot - 1);
+
+            // sortér højre side (større tal)
+            intQuickSort(arr, pivot + 1, high);
+        }
+    }
+
+    private static int partition(int[] arr, int low, int high){
+
+        // vælg sidste element som pivot
+        int pivotValue = arr[high];
+
+        int i = low - 1;
+
+        for(int j = low; j < high; j++){
+
+            // hvis tallet er mindre end pivot
+            if(arr[j] <= pivotValue){
+                i++;
+
+                // byt elementer
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+
+        // placer pivot korrekt
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+
+        return i + 1;
+    }
+
+
+
+    /// MergeSort
     public static void mergeSort(Student[] students){
         // Hvis der er 1 element tilbage kan vi ikke sortere mere
         // Dette er metoden base case
