@@ -72,3 +72,56 @@ Det laver en ny liste ud fra en del af en eksisterende liste.
 - set() bruges til at overskrive eksisterende elementer, mens add() ville indsætte og flytte elementer, hvilket ikke er ønsket.
 
 Merge sort bruger divide and conquer, hvor arrayet deles op rekursivt indtil base case, og derefter merges sorteret igen.
+
+
+### Opg 3
+**Hvad sker der når man udkommenterer Collections.shuffle(original)?**
+
+Når shuffle fjernes, bliver listen ofte allerede sorteret eller næsten sorteret.
+QuickSort vælger i denne implementering det sidste element som pivot.
+Hvis data allerede er sorteret, vil pivot altid være det største element.
+
+**Hvorfor er det et problem? (worst case scenario)**
+
+Når pivot altid er det største (eller mindste), bliver opdelingen meget skæv:
+Venstre side får næsten alle elementer
+Højre side får næsten ingen
+Det betyder, at algoritmen ikke deler problemet effektivt.
+
+**Konsekvens:**
+
+I stedet for optimal tid: O(n log n)
+Får vi worst case: O(n²)
+Derfor bliver quicksort meget langsommere uden shuffle.
+
+### Forklaring af min egen quicksort (int array):
+
+Jeg bruger rekursion til at dele arrayet op i mindre dele.
+Først finder jeg en pivot, som er det sidste element i arrayet.
+Derefter flytter jeg alle tal, der er mindre end pivot, til venstre side.
+Til sidst placeres pivot det rigtige sted i arrayet.
+
+**Step-by-step:**
+
+1. **Base case**
+- Stop hvis low >= high (arrayet er allerede sorteret nok)
+
+2. **Partition**
+- Gennemløb arrayet
+- Sammenlign hvert tal med pivot
+- Byt elementer så små tal kommer til venstre
+
+3. **Rekursion**
+- Kør quicksort på venstre side
+- Kør quicksort på højre side
+
+### Hvorfor virker det?
+- QuickSort bruger divide and conquer:
+- Deler problemet op i mindre dele
+- Løser dem rekursivt
+- Når alle delarrays er sorteret, er hele arrayet sorteret.
+
+### Kort opsummering:
+- QuickSort er hurtig i gennemsnit (O(n log n))
+- Men kan blive langsom (O(n²)) hvis pivot vælges dårligt
+- Derfor bruges shuffle for at undgå worst case
