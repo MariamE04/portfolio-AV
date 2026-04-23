@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="opg 3 i sort er løst">
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="Noter tilføjet">
+      <change afterPath="$PROJECT_DIR$/docs/Case - LogistikEkspressen.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/algorithms/backtracking.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/algorithms/backtracking_exercise.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/algorithms/bfs_dfs_exercise.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/algorithms/cycle_detection_preparation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/algorithms/graph_preparation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/algorithms/reversedlinkedlist_exercise.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/searchandsort/sort.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/searchandsort/sort.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +135,9 @@
       <workItem from="1776598317350" duration="72000" />
       <workItem from="1776681651390" duration="7581000" />
       <workItem from="1776755753978" duration="12000" />
-      <workItem from="1776795970569" duration="307000" />
+      <workItem from="1776795970569" duration="560000" />
+      <workItem from="1776930316007" duration="19000" />
+      <workItem from="1776939694393" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -203,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776690828929</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Noter tilføjet">
+      <option name="closed" value="true" />
+      <created>1776796419692</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1776796419692</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +234,7 @@
     <MESSAGE value="bubble sort (opg 2 færdig)" />
     <MESSAGE value="noter tilføjet til complexity.md" />
     <MESSAGE value="opg 3 i sort er løst" />
-    <option name="LAST_COMMIT_MESSAGE" value="opg 3 i sort er løst" />
+    <MESSAGE value="Noter tilføjet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Noter tilføjet" />
   </component>
 </project>
