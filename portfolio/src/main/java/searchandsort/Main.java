@@ -188,7 +188,6 @@ public class Main {
         }
     }
 
-
     /// Hjælpemetoder til udskrift
     private static void printList(String label, List<Student> list) {
         System.out.println(label + ": ");

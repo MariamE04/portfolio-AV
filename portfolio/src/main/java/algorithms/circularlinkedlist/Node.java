@@ -9,7 +9,7 @@ class Node {
     }
 
     public String toString(){
-        String result = "" + value;
+      String result = "" + value;
         if (next != null){
             result += " -> " + next.toString();
         }
