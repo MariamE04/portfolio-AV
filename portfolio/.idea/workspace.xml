@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="docs mappen tilføjet">
-      <change afterPath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" afterDir="false" />
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="opg 1 i algorithms.md lavet og 2 færdig skal bare fikse fejl">
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/greedy/WoodHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/circularlinkedlist/ListFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/circularlinkedlist/ListFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/circularlinkedlist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/circularlinkedlist/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/floydexample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/floydexample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/floydexample/TraversingArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/floydexample/TraversingArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/reversedlinkedlist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/reversedlinkedlist/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/reversedlinkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/reversedlinkedlist/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/circularlinkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/circularlinkedlist/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,7 @@
     "Application.BigOExamples.executor": "Run",
     "Application.Book.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.WoodHandler.executor": "Run",
     "Application.algorithms.circularlinkedlist.Main.executor": "Run",
     "Application.algorithms.floydexample.Main.executor": "Run",
     "Application.algorithms.reversedlinkedlist.Main.executor": "Run",
@@ -79,13 +78,13 @@
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.algorithms.circularlinkedlist.Main">
-    <configuration name="Book" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searchandsort.entities.Book" />
+  <component name="RunManager" selected="Application.WoodHandler">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="searchandsort.Main" />
       <module name="portfolio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="searchandsort.entities.*" />
+          <option name="PATTERN" value="searchandsort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searchandsort.Main" />
+    <configuration name="WoodHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithms.greedy.WoodHandler" />
       <module name="portfolio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="searchandsort.*" />
+          <option name="PATTERN" value="algorithms.greedy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WoodHandler" />
         <item itemvalue="Application.algorithms.circularlinkedlist.Main" />
         <item itemvalue="Application.algorithms.reversedlinkedlist.Main" />
         <item itemvalue="Application.algorithms.floydexample.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Book" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +182,8 @@
       <workItem from="1776755753978" duration="12000" />
       <workItem from="1776795970569" duration="560000" />
       <workItem from="1776930316007" duration="19000" />
-      <workItem from="1776939694393" duration="11115000" />
+      <workItem from="1776939694393" duration="11373000" />
+      <workItem from="1777023718235" duration="3376000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -273,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776940013601</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="opg 1 i algorithms.md lavet og 2 færdig skal bare fikse fejl">
+      <option name="closed" value="true" />
+      <created>1776951518684</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1776951518684</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +298,7 @@
     <MESSAGE value="opg 3 i sort er løst" />
     <MESSAGE value="Noter tilføjet" />
     <MESSAGE value="docs mappen tilføjet" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs mappen tilføjet" />
+    <MESSAGE value="opg 1 i algorithms.md lavet og 2 færdig skal bare fikse fejl" />
+    <option name="LAST_COMMIT_MESSAGE" value="opg 1 i algorithms.md lavet og 2 færdig skal bare fikse fejl" />
   </component>
 </project>

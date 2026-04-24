@@ -25,7 +25,7 @@ public class ListFactory {
         n2.next = n3;
         n3.next = n4;
         n4.next = n5;
-        n5.next = n2; // Laver cyklus
+        n5.next = n2; // Laver cyklus (manuelt)/ n5 peger tilbage på n2 → listen bliver uendelig
         return n1;
     }
 
