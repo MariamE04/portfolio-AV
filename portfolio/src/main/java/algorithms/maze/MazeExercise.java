@@ -22,7 +22,33 @@ public class MazeExercise {
 
     // TODO: Implementer denne metode
     static boolean solveMaze(int row, int col) {
-        // ...
+        // Tjekke om du går udenfor labyrintens grænser
+        if (row < 0 || col < 0 || row >= N || col >= N || maze[row][col] != 1) {
+            return false;
+        }
+
+        // Tjekke om feltet er en del af en sti du har prøvet før (path)
+        if (path[row][col] == 1) {
+            return false;
+        }
+
+        // Tjekke om du har nået målet ([row][col] == 3)
+        if (row == N - 1 && col == N - 1) {
+            path[row][col] = 1;
+            return true;
+        }
+
+        // Markere feltet som en del af stien
+        path[row][col] = 1;
+
+        // Prøv de fire retninger én af gangen
+        if(solveMaze(row+1, col)) return true;
+        if(solveMaze(row, col+1)) return true;
+        if(solveMaze(row-1, col)) return true;
+        if(solveMaze(row, col+1)) return true;
+
+        // Hvis ingen muligheder virker, så backtrack (og fjern feltet fra path)
+        path[row][col] = 0;
         return false;
     }
 
