@@ -1,13 +1,15 @@
 package algorithms.maze;
 
 public class MazeExercise {
-    static final int N = 4;
+    static final int N = 6;
 
     static int[][] maze = {
-            {1, 0, 1, 1},
-            {1, 1, 1, 0},
-            {0, 0, 1, 1},
-            {1, 1, 0, 1}
+            {1, 0, 1, 1, 1, 0},
+            {1, 1, 1, 0, 1, 0},
+            {0, 0, 1, 0, 1, 1},
+            {0, 1, 1, 1, 0, 1},
+            {0, 1, 0, 0, 0, 1},
+            {0, 1, 1, 1, 1, 1}
     };
 
     static int[][] path = new int[N][N];
@@ -22,34 +24,44 @@ public class MazeExercise {
 
     // TODO: Implementer denne metode
     static boolean solveMaze(int row, int col) {
-        // Tjekke om du går udenfor labyrintens grænser
+
+        // Tjek: udenfor grid ELLER rammer en mur (0)
         if (row < 0 || col < 0 || row >= N || col >= N || maze[row][col] != 1) {
             return false;
         }
 
-        // Tjekke om feltet er en del af en sti du har prøvet før (path)
+        // Tjek: har vi allerede været her?
+        // Hvis ja → undgå uendelig loop
         if (path[row][col] == 1) {
             return false;
         }
 
-        // Tjekke om du har nået målet ([row][col] == 3)
+        // Tjek: er vi nået til målet? (nederste højre hjørne)
         if (row == N - 1 && col == N - 1) {
-            path[row][col] = 1;
-            return true;
+            path[row][col] = 1; // markér sidste skridt
+            return true;        // løsning fundet
         }
 
-        // Markere feltet som en del af stien
+        // Markér nuværende felt som en del af stien
         path[row][col] = 1;
 
-        // Prøv de fire retninger én af gangen
-        if(solveMaze(row+1, col)) return true;
-        if(solveMaze(row, col+1)) return true;
-        if(solveMaze(row-1, col)) return true;
-        if(solveMaze(row, col+1)) return true;
+        // Prøv at gå NED
+        if (solveMaze(row + 1, col)) return true;
 
-        // Hvis ingen muligheder virker, så backtrack (og fjern feltet fra path)
+        // Prøv at gå HØJRE
+        if (solveMaze(row, col + 1)) return true;
+
+        // Prøv at gå OP
+        if (solveMaze(row - 1, col)) return true;
+
+        // Prøv at gå VENSTRE
+        if (solveMaze(row, col - 1)) return true;
+
+        // BACKTRACK:
+        // Ingen retninger virkede → fjern fra path
         path[row][col] = 0;
-        return false;
+
+        return false; // ingen løsning fra denne position
     }
 
     static void printPath() {

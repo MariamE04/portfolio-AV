@@ -77,41 +77,43 @@ Du har en labyrint, du skal gå igennem. Labyrinten er repræsenteret af et to-d
 - `1` betyder "du kan gå her"
 - `0` betyder "mur - her kan du ikke gå"
 
-Labyrinten kan fx se sådan ud: 
+Labyrinten kan fx se sådan ud:
 
 ```java
 int[][] maze = {
-{1, 0, 1, 1},
-{1, 1, 1, 0},
-{0, 0, 1, 1},
-{1, 1, 0, 1}
+        {1, 0, 1, 1, 1, 0},
+        {1, 1, 1, 0, 1, 0},
+        {0, 0, 1, 0, 1, 1},
+        {0, 1, 1, 1, 0, 1},
+        {0, 1, 0, 0, 0, 1},
+        {0, 1, 1, 1, 1, 1}
 };
 ```
 
-Du starter i øverste venstre hjørne (0,0) og skal finde vej til nederste højre hjørne (3,3). 
+Du starter i øverste venstre hjørne (0,0) og skal finde vej til nederste højre hjørne (3,3).
 
 Kig på koden i `maze.MazeExercise`. Der mangler at blive implementeret en metode, der kan gå gennem labyrinten.
-I kan med fordel arbejde sammen i par og skrive pseudokode for metoden inden I implementerer. 
+I kan med fordel arbejde sammen i par og skrive pseudokode for metoden inden I implementerer.
 
-Brug `int[][] path = new int[N][N];` til at holde styr på vejen gennem labyrinten. Den skal både bruges, når du 
-printer løsningen og når du tjekker for om du allerede har besøgt et felt. 
+Brug `int[][] path = new int[N][N];` til at holde styr på vejen gennem labyrinten. Den skal både bruges, når du
+printer løsningen og når du tjekker for om du allerede har besøgt et felt.
 
 Opgaven er nu
 
 - Implementer metoden `solveMaze(..)`. For hvert skridt skal du
-  - Tjekke om du går udenfor labyrintens grænser
-  - Tjekke om feltet er gyldigt ([row][col] == 1)
-  - Tjekke om feltet er en del af en sti du har prøvet før (`path`)
-  - Tjekke om du har nået målet ([row][col] == 3)
-  - Markere feltet som en del af stien (`path`)
-  - Prøv de fire retninger én af gangen
-    - ned
-    - højre
-    - op
-    - venstre
-  - Hvis ingen muligheder virker, så backtrack (og fjern feltet fra `path`)
+    - Tjekke om du går udenfor labyrintens grænser
+    - Tjekke om feltet er gyldigt ([row][col] == 1)
+    - Tjekke om feltet er en del af en sti du har prøvet før (`path`)
+    - Tjekke om du har nået målet ([row][col] == 3)
+    - Markere feltet som en del af stien (`path`)
+    - Prøv de fire retninger én af gangen
+        - ned
+        - højre
+        - op
+        - venstre
+    - Hvis ingen muligheder virker, så backtrack (og fjern feltet fra `path`)
 
-Du kan søge inspiration i `backtracking/NQueeens`  
+Du kan søge inspiration i `algorithms.backtracking.NQueeens`
 
 ## 5. Dovne beregninger
 
@@ -248,3 +250,98 @@ Fordel:
 
 Ulempe:
 - Langsom (eksponentiel tid)
+
+
+
+## Backtracking (opgave 4)
+
+Backtracking er en algoritme, hvor vi prøver forskellige løsninger og går tilbage (backtrack), hvis en løsning ikke virker.
+
+I denne opgave bruges backtracking til at finde en vej gennem en labyrint.
+
+**Labyrinten:**
+
+- 1 = gyldig vej
+- 0 = mur
+
+Vi starter i (0,0) og vil nå til (N-1, N-1).
+
+**Idé**
+- Vi bevæger os gennem labyrinten én celle ad gangen
+- Vi markerer hvor vi har været (path)
+- Hvis vi rammer en forkert vej → går vi tilbage (backtrack)
+- Vi prøver alle retninger indtil vi finder en løsning
+
+
+**Hvordan algoritmen arbejder**
+
+For hver position (row, col):
+
+1. Tjek om vi er udenfor grænserne
+2. Tjek om det er en mur (maze[row][col] == 0)
+3. Tjek om vi allerede har været der (path[row][col] == 1)
+4. Tjek om vi er i mål
+5. Markér feltet som en del af stien
+6. Prøv alle retninger:
+- ned 
+- højre 
+- op 
+- venstre
+7. Hvis ingen virker → backtrack
+
+solveMaze(row, col):
+
+    hvis udenfor grid → return false
+
+    hvis maze[row][col] == 0 → return false
+
+    hvis path[row][col] == 1 → return false
+
+    hvis vi er i mål:
+        markér path
+        return true
+
+    markér path[row][col] = 1
+
+    hvis solveMaze(ned) → return true
+    hvis solveMaze(højre) → return true
+    hvis solveMaze(op) → return true
+    hvis solveMaze(venstre) → return true
+
+    // BACKTRACK
+    path[row][col] = 0
+
+    return false
+
+
+**Vigtigt (Backtracking step)**
+
+```java
+path[row][col] = 0
+```
+
+**Dette betyder:**
+
+“Denne vej virkede ikke → fjern den igen”
+
+**Kompleksitet**
+- Tidskompleksitet: O(4^n)
+- Space: O(n²)
+
+**Fordele og ulemper**
+
+Fordele:
+- Finder altid en løsning (hvis den findes)
+
+Ulemper:
+- Kan være langsom (prøver mange muligheder)
+
+Backtracking:
+- Prøver alle mulige veje
+- Går tilbage hvis en vej ikke virker
+- Finder en gyldig løsning
+
+**I maze:**
+- Vi bevæger os i 4 retninger
+- Vi markerer vores vej
+- Vi fjerner den igen hvis det er en forkert vej

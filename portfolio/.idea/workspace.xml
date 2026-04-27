@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="opg 1-3 i algorithms.md løst og tilføjet noter">
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="æ">
+      <change afterPath="$PROJECT_DIR$/docs/algorithms/greedy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/algorithms/lazy.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/algorithms/bfs_dfs_exercise.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/algorithms/bfs_dfs_exercise.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/maze/MazeExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/maze/MazeExercise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +61,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/portfolio_exercises/algorithms&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/docs/algorithms&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs\algorithms" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises\algorithms" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio" />
     </key>
@@ -182,7 +187,8 @@
       <workItem from="1776939694393" duration="11373000" />
       <workItem from="1777023718235" duration="3952000" />
       <workItem from="1777109213370" duration="3132000" />
-      <workItem from="1777286110355" duration="5464000" />
+      <workItem from="1777286110355" duration="6560000" />
+      <workItem from="1777316522931" duration="3793000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -288,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777027630686</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="opg 4 (Backtracking) i algorithms FÆRDIG (mangler bare lige få noter)">
+      <option name="closed" value="true" />
+      <created>1777293901613</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1777293901613</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +321,7 @@
     <MESSAGE value="docs mappen tilføjet" />
     <MESSAGE value="opg 1 i algorithms.md lavet og 2 færdig skal bare fikse fejl" />
     <MESSAGE value="opg 1-3 i algorithms.md løst og tilføjet noter" />
-    <option name="LAST_COMMIT_MESSAGE" value="opg 1-3 i algorithms.md løst og tilføjet noter" />
+    <MESSAGE value="opg 4 (Backtracking) i algorithms FÆRDIG (mangler bare lige få noter)" />
+    <option name="LAST_COMMIT_MESSAGE" value="opg 4 (Backtracking) i algorithms FÆRDIG (mangler bare lige få noter)" />
   </component>
 </project>
