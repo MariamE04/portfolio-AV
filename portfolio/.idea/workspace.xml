@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="æ">
-      <change afterPath="$PROJECT_DIR$/docs/algorithms/greedy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/algorithms/lazy.md" afterDir="false" />
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="noter til opgave 4">
+      <change afterPath="$PROJECT_DIR$/docs/graphs/bfs_dfs_exercise.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/graphs/graph_preparation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/graphsearch/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/graphsearch/SearchStrategies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/graphsearchcycles/CycleDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/graphsearchcycles/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/treesearch/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/treesearch/SearchStrategies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/treesearchsolution/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/treesearchsolution/SearchStrategies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/undirectedgraphs/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/undirectedgraphs/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/algorithms/bfs_dfs_exercise.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/algorithms/bfs_dfs_exercise.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/maze/MazeExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/maze/MazeExercise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,33 +53,33 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BigOExamples.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Book.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MazeExercise.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WoodHandler.executor&quot;: &quot;Run&quot;,
-    &quot;Application.algorithms.circularlinkedlist.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.algorithms.floydexample.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.algorithms.reversedlinkedlist.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/docs/algorithms&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BigOExamples.executor": "Run",
+    "Application.Book.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MazeExercise.executor": "Run",
+    "Application.WoodHandler.executor": "Run",
+    "Application.algorithms.circularlinkedlist.Main.executor": "Run",
+    "Application.algorithms.floydexample.Main.executor": "Run",
+    "Application.algorithms.reversedlinkedlist.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs\algorithms" />
@@ -188,7 +195,12 @@
       <workItem from="1777023718235" duration="3952000" />
       <workItem from="1777109213370" duration="3132000" />
       <workItem from="1777286110355" duration="6560000" />
-      <workItem from="1777316522931" duration="3793000" />
+      <workItem from="1777316522931" duration="4038000" />
+      <workItem from="1777363751136" duration="14000" />
+      <workItem from="1777381969017" duration="42000" />
+      <workItem from="1777396313762" duration="643000" />
+      <workItem from="1777458121043" duration="21000" />
+      <workItem from="1777544981277" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -302,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777293901613</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="noter til opgave 4">
+      <option name="closed" value="true" />
+      <created>1777320620336</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1777320620336</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +342,7 @@
     <MESSAGE value="opg 1 i algorithms.md lavet og 2 færdig skal bare fikse fejl" />
     <MESSAGE value="opg 1-3 i algorithms.md løst og tilføjet noter" />
     <MESSAGE value="opg 4 (Backtracking) i algorithms FÆRDIG (mangler bare lige få noter)" />
-    <option name="LAST_COMMIT_MESSAGE" value="opg 4 (Backtracking) i algorithms FÆRDIG (mangler bare lige få noter)" />
+    <MESSAGE value="noter til opgave 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="noter til opgave 4" />
   </component>
 </project>
