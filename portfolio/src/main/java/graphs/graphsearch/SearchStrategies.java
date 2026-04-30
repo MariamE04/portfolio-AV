@@ -40,24 +40,38 @@ public class SearchStrategies {
 
 
     public static Node searchBFS(String targetName, Node start) {
+
+        // Opretter en queue (FIFO) til BFS
         Queue<Node> queue = new ArrayDeque<>();
+
+        // Starter med at tilføje start-noden
         queue.add(start);
 
+        // Så længe der stadig er elementer i køen
         while (!queue.isEmpty()) {
+
+            // Printer hele køen (for at se rækkefølgen)
             System.out.print("Current queue: ");
             for (Node item : queue) {
                 System.out.print(item.getName() + " ");
             }
             System.out.println();
 
+            // Fjerner første element i køen (FIFO)
             Node currentNode = queue.remove();
 
+            // Tjekker om vi har fundet det vi leder efter
             if (currentNode.getName().equals(targetName)) {
                 System.out.println("Finished searching!");
-                return currentNode;
+                return currentNode; // returnerer noden hvis fundet
             }
+
+            // Hvis ikke fundet → tilføj alle naboer til køen
+            // (det er her BFS går niveau for niveau)
             else queue.addAll(currentNode.getNeighbors());
         }
+
+        // Hvis vi har gennemgået hele grafen uden at finde target
         return null;
     }
 

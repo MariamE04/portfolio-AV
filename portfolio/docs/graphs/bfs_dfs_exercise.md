@@ -50,3 +50,98 @@ Kig på klassen `graphs.graphsearchcycles.CycleDetector` og se hvordan vi i sted
 - Kør `main`-metoden og tegn hvad der sker.
 - Tilføj eventuelt nogle udprint af `inPath` for at følge hvad der sker. 
 
+
+## NOTER
+OPG 1 BFS
+- Queue (FIFO)
+
+**Overvej hvad det betyder, at vi bruger Queue som referencetype (hint: det er en FIFO struktur).**
+
+**Når vi bruger `Queue<Node>:`**
+- Det er en FIFO struktur (First In, First Out)
+- Den node, der bliver lagt i først, bliver behandlet først
+
+Det betyder:
+- BFS besøger noder niveau for niveau
+
+Forklaring:
+Q- ueue sikrer, at vi udforsker grafen bredt først, fordi vi altid tager den ældste node først.
+
+
+**Rettet eller urettet graf?**
+
+Min Node (graphsearch):
+
+```java
+public void addNeighbor(Node neighbor) {
+neighbors.add(neighbor);
+}
+```
+
+Tilføjer kun nabo i én retning
+➡ Det er en Directed Graph
+
+Undirected Node (undirectedgraphs):
+
+```java
+public void addNeighbor(Node other) {
+this.neighbors.add(other);
+other.neighbors.add(this);
+}
+```
+
+Tilføjer begge veje
+➡ Det er en Undirected Graph
+
+
+**Vægtede eller uvægtede kanter?**
+
+I Node-klassen:
+
+```java
+private List<Node> neighbors;
+Der er ingen vægte (tal)
+```
+
+➡ Grafen er en Unweighted Graph
+
+Forklaring:
+- Alle forbindelser behandles ens (ingen distance/cost)
+
+**Problem med List som neighbors**
+
+`private List<Node> neighbors;`
+
+Problemer:
+- Kan indeholde dubletter
+- Samme node kan blive tilføjet flere gange
+- BFS kan besøge samme node flere gange
+
+Eksempel:
+- `a.addNeighbor(b);`
+- `a.addNeighbor(b);`
+- Bedre datastruktur
+
+➡ Set (Java)
+
+`private Set<Node> neighbors = new HashSet<>();`
+
+Fordele:
+- Ingen dubletter
+- Mere korrekt ift. graf-teori
+- Undgår unødvendige gentagelser
+
+Selv med Set:
+- BFS mangler stadig en visited struktur Ellers kan den gå i ring i grafer med cycles.
+
+Eksempel:
+- A → B → A
+
+➡ Uden visited → uendeligt loop
+
+### Kort eksamenssvar
+- Queue gør BFS FIFO → vi traverserer niveau for niveau
+- Grafen er rettet, fordi forbindelser kun går én vej
+- Grafen er uvægtet, fordi der ikke er weights
+- List kan give dubletter → Set er bedre
+- Man bør bruge visited for at undgå cycles
