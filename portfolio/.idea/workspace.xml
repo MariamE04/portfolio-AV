@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="noter til bfs tilføjet og opg 1 i docs færdig">
-      <change afterPath="$PROJECT_DIR$/docs/graphs/astar_preparation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/graphs/dijkstra_preparation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/graphs/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/graphs/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio_exercises/graphs/Astar.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio_exercises/graphs/Dijkstra.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/astar/AStar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/astar/WeightedNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/Dijkstra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/WeightedNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/astar_maze.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/dijkstra_graph.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/dijkstra_maze.html" afterDir="false" />
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="hentet de ny opdateringer">
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/Noter.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphs/graphsearch/SearchStrategies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphs/graphsearch/SearchStrategies.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +46,7 @@
   "keyToString": {
     "Application.BigOExamples.executor": "Run",
     "Application.Book.executor": "Run",
+    "Application.Dijkstra.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MazeExercise.executor": "Run",
     "Application.SearchStrategies.executor": "Run",
@@ -92,7 +80,20 @@
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SearchStrategies">
+  <component name="RunManager" selected="Application.Dijkstra">
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graphs.dijkstra.Dijkstra" />
+      <module name="portfolio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graphs.dijkstra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="algorithms.backtracking.Main" />
       <module name="portfolio" />
@@ -145,26 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="algorithms.circularlinkedlist.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithms.circularlinkedlist.Main" />
-      <module name="portfolio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.circularlinkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Dijkstra" />
         <item itemvalue="Application.SearchStrategies" />
         <item itemvalue="Application.MazeExercise" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.WoodHandler" />
-        <item itemvalue="Application.algorithms.circularlinkedlist.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +194,7 @@
       <workItem from="1777396313762" duration="643000" />
       <workItem from="1777458121043" duration="21000" />
       <workItem from="1777544981277" duration="5635000" />
-      <workItem from="1777800335666" duration="1909000" />
+      <workItem from="1777800335666" duration="3670000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -344,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777552380139</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="hentet de ny opdateringer">
+      <option name="closed" value="true" />
+      <created>1777893934036</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1777893934036</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +363,7 @@
     <MESSAGE value="noter til opgave 4" />
     <MESSAGE value="manuelt kopieret ændring fra den anden projekt (clonet)" />
     <MESSAGE value="noter til bfs tilføjet og opg 1 i docs færdig" />
-    <option name="LAST_COMMIT_MESSAGE" value="noter til bfs tilføjet og opg 1 i docs færdig" />
+    <MESSAGE value="hentet de ny opdateringer" />
+    <option name="LAST_COMMIT_MESSAGE" value="hentet de ny opdateringer" />
   </component>
 </project>
