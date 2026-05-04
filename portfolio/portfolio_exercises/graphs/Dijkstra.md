@@ -19,3 +19,31 @@ Lav evt. tabeller over hvad der er i kø og/eller i visited.
 
 Hvis du bruger JavaScript eller Processing må du gerne få hjælp af AI til selve koden, men du skal selv beslutte hvad du vil visualisere og hvorfor. 
 Det er designbeslutningen der er vigtig, ikke om du skriver koden selv.
+
+
+
+## NOTER
+Algoritmen starter i node A med afstand 0. Alle andre noder har i starten ingen kendt afstand.
+
+Først besøges A, og dens naboer B og C bliver opdateret:
+
+* B får afstand 4
+* C får afstand 2
+
+Derefter vælges den node med lavest afstand, som er C.
+
+Fra C opdateres D til afstand 3 (2 + 1).
+
+Herefter besøges D, og E opdateres til 6 (3 + 3).
+
+Selvom B stadig er i køen, vælges den først senere, fordi dens afstand er højere.
+
+Algoritmen fortsætter med at vælge den billigste node:
+
+* E → opdaterer F til 8
+* F → opdaterer G til 9
+* G → opdaterer H til 11
+
+Til sidst når algoritmen målnoden H og stopper.
+
+Den korteste vej rekonstrueres ved at følge previous-mappet baglæns fra H til A.

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="hentet de ny opdateringer">
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/Noter.md" afterDir="false" />
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="noter tilføjet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/CityDijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/CityDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/graphs/Dijkstra.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/graphs/Dijkstra.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +49,7 @@
   "keyToString": {
     "Application.BigOExamples.executor": "Run",
     "Application.Book.executor": "Run",
+    "Application.CityDijkstra.executor": "Run",
     "Application.Dijkstra.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MazeExercise.executor": "Run",
@@ -79,8 +83,24 @@
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs\graphs" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\graphs\dijkstra" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Dijkstra">
+  <component name="RunManager" selected="Application.CityDijkstra">
+    <configuration name="CityDijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graphs.dijkstra.CityDijkstra" />
+      <module name="portfolio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graphs.dijkstra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="graphs.dijkstra.Dijkstra" />
       <module name="portfolio" />
@@ -133,26 +153,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WoodHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithms.greedy.WoodHandler" />
-      <module name="portfolio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.greedy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CityDijkstra" />
         <item itemvalue="Application.Dijkstra" />
         <item itemvalue="Application.SearchStrategies" />
         <item itemvalue="Application.MazeExercise" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.WoodHandler" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +201,7 @@
       <workItem from="1777396313762" duration="643000" />
       <workItem from="1777458121043" duration="21000" />
       <workItem from="1777544981277" duration="5635000" />
-      <workItem from="1777800335666" duration="3670000" />
+      <workItem from="1777800335666" duration="7339000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -340,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777893934036</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="noter tilføjet">
+      <option name="closed" value="true" />
+      <created>1777896950522</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1777896950522</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +379,7 @@
     <MESSAGE value="manuelt kopieret ændring fra den anden projekt (clonet)" />
     <MESSAGE value="noter til bfs tilføjet og opg 1 i docs færdig" />
     <MESSAGE value="hentet de ny opdateringer" />
-    <option name="LAST_COMMIT_MESSAGE" value="hentet de ny opdateringer" />
+    <MESSAGE value="noter tilføjet" />
+    <option name="LAST_COMMIT_MESSAGE" value="noter tilføjet" />
   </component>
 </project>
