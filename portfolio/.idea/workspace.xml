@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="manuelt kopieret ændring fra den anden projekt (clonet)">
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="noter til bfs tilføjet og opg 1 i docs færdig">
+      <change afterPath="$PROJECT_DIR$/docs/graphs/astar_preparation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/graphs/dijkstra_preparation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/graphs/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/graphs/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio_exercises/graphs/Astar.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio_exercises/graphs/Dijkstra.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/astar/AStar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/astar/WeightedNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/WeightedNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/astar_maze.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/dijkstra_graph.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/dijkstra_maze.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/graphs/bfs_dfs_exercise.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/graphs/bfs_dfs_exercise.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphs/graphsearch/SearchStrategies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphs/graphsearch/SearchStrategies.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +61,7 @@
     "Application.Book.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MazeExercise.executor": "Run",
-    "Application.SearchStrategies.executor": "Debug",
+    "Application.SearchStrategies.executor": "Run",
     "Application.WoodHandler.executor": "Run",
     "Application.algorithms.circularlinkedlist.Main.executor": "Run",
     "Application.algorithms.floydexample.Main.executor": "Run",
@@ -59,7 +71,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/src/main/java",
+    "last_opened_file_path": "C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,11 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java" />
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio" />
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\graphs" />
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises\graphs" />
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs\graphs" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises" />
-      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs" />
-      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs\algorithms" />
-      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises\algorithms" />
     </key>
   </component>
   <component name="RunManager" selected="Application.SearchStrategies">
@@ -193,7 +205,8 @@
       <workItem from="1777381969017" duration="42000" />
       <workItem from="1777396313762" duration="643000" />
       <workItem from="1777458121043" duration="21000" />
-      <workItem from="1777544981277" duration="3386000" />
+      <workItem from="1777544981277" duration="5635000" />
+      <workItem from="1777800335666" duration="1909000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -323,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777545406948</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="noter til bfs tilføjet og opg 1 i docs færdig">
+      <option name="closed" value="true" />
+      <created>1777552380139</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1777552380139</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,17 +366,7 @@
     <MESSAGE value="opg 4 (Backtracking) i algorithms FÆRDIG (mangler bare lige få noter)" />
     <MESSAGE value="noter til opgave 4" />
     <MESSAGE value="manuelt kopieret ændring fra den anden projekt (clonet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="manuelt kopieret ændring fra den anden projekt (clonet)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/graphs/graphsearch/SearchStrategies.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="noter til bfs tilføjet og opg 1 i docs færdig" />
+    <option name="LAST_COMMIT_MESSAGE" value="noter til bfs tilføjet og opg 1 i docs færdig" />
   </component>
 </project>

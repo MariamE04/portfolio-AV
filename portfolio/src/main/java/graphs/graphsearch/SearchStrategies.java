@@ -76,33 +76,43 @@ public class SearchStrategies {
     }
 
     public static Node searchDFS(String targetName, Node start) {
+
+        // Opretter en stack (LIFO) til DFS
         Deque<Node> stack = new ArrayDeque<>();
+
+        // Starter med at lægge start-noden på toppen af stakken
         stack.push(start);
 
+        // Så længe stakken ikke er tom
         while (!stack.isEmpty()) {
 
+            // Printer stakkens indhold (for at følge rækkefølgen)
             System.out.print("Current stack: ");
             for (Node item : stack) {
                 System.out.print(item.getName() + " ");
             }
             System.out.println();
 
+            // Fjerner det øverste element (LIFO → sidst ind, først ud)
             Node currentNode = stack.pop();
 
+            // Tjekker om vi har fundet det vi leder efter
             if (currentNode.getName().equals(targetName)) {
                 System.out.println("Finished searching!");
-                return currentNode;
+                return currentNode; // returnerer noden hvis fundet
             } else {
+
+                // Hvis ikke fundet → tilføj alle naboer til stakken
+                // (det gør at vi går "dybt" før vi går bredt)
                 for (Node neighbor : currentNode.getNeighbors()) {
                     stack.push(neighbor);
                 }
             }
-
         }
 
+        // Hvis vi har gennemgået hele grafen uden at finde target
         return null;
     }
-
 
 
 }
