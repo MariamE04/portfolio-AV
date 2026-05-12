@@ -22,3 +22,9 @@ Hvis du bruger JavaScript eller Processing må du gerne få hjælp af AI til sel
 ### Andre heuristikker (valgfrit)
 
 Der findes andre heuristikker end Manhattan. Kig evt. på nogle af dem og lav en opgave hvor du bruger dem.
+
+
+## NOTER
+Jeg har lavet en A* algoritme som finder den korteste vej mellem byer i et 8x8 grid.
+Algoritmen bruger Manhattan heuristik til at vurdere hvilke byer der er tættest på målet.
+Jeg har valgt at visualisere hvilke byer der besøges, hvilke afstande der opdateres, og hvilken vej algoritmen vælger.

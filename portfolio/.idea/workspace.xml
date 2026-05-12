@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="portofolie exiceris til Dijkstra lavet">
-      <change afterPath="$PROJECT_DIR$/docs/reflection/reflection_exercises.md" afterDir="false" />
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="hentet opdates fra projektet ind manuelt og lavet forberdelses opgaven under A*">
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/astar/CityAStar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/astar/CityNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/graphs/astar_preparation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/graphs/astar_preparation.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +45,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AStar.executor": "Run",
     "Application.BigOExamples.executor": "Run",
     "Application.Book.executor": "Run",
+    "Application.CityAStar.executor": "Run",
     "Application.CityDijkstra.executor": "Run",
     "Application.Dijkstra.executor": "Run",
     "Application.Main.executor": "Run",
@@ -85,7 +87,33 @@
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\graphs\dijkstra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CityDijkstra">
+  <component name="RunManager" selected="Application.CityAStar">
+    <configuration name="AStar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graphs.astar.AStar" />
+      <module name="portfolio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graphs.astar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityAStar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graphs.astar.CityAStar" />
+      <module name="portfolio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graphs.astar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CityDijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="graphs.dijkstra.CityDijkstra" />
       <module name="portfolio" />
@@ -112,32 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithms.backtracking.Main" />
-      <module name="portfolio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.backtracking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MazeExercise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithms.maze.MazeExercise" />
-      <module name="portfolio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.maze.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SearchStrategies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="graphs.graphsearch.SearchStrategies" />
       <module name="portfolio" />
@@ -153,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CityAStar" />
+        <item itemvalue="Application.AStar" />
         <item itemvalue="Application.CityDijkstra" />
         <item itemvalue="Application.Dijkstra" />
         <item itemvalue="Application.SearchStrategies" />
-        <item itemvalue="Application.MazeExercise" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +204,7 @@
       <workItem from="1777800335666" duration="7491000" />
       <workItem from="1777965003782" duration="20000" />
       <workItem from="1777968896475" duration="789000" />
-      <workItem from="1778582017788" duration="1528000" />
+      <workItem from="1778582017788" duration="5043000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -364,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777908950423</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="hentet opdates fra projektet ind manuelt og lavet forberdelses opgaven under A*">
+      <option name="closed" value="true" />
+      <created>1778584343359</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1778584343359</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +400,7 @@
     <MESSAGE value="hentet de ny opdateringer" />
     <MESSAGE value="noter tilføjet" />
     <MESSAGE value="portofolie exiceris til Dijkstra lavet" />
-    <option name="LAST_COMMIT_MESSAGE" value="portofolie exiceris til Dijkstra lavet" />
+    <MESSAGE value="hentet opdates fra projektet ind manuelt og lavet forberdelses opgaven under A*" />
+    <option name="LAST_COMMIT_MESSAGE" value="hentet opdates fra projektet ind manuelt og lavet forberdelses opgaven under A*" />
   </component>
 </project>
