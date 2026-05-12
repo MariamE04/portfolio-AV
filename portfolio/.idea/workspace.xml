@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="noter tilføjet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/CityDijkstra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/dijkstra/CityDistance.java" afterDir="false" />
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="portofolie exiceris til Dijkstra lavet">
+      <change afterPath="$PROJECT_DIR$/docs/reflection/reflection_exercises.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/graphs/Dijkstra.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/graphs/Dijkstra.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/graphs/astar_preparation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/graphs/astar_preparation.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio",
+    "last_opened_file_path": "C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/docs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,11 +75,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\graphs" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises\graphs" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs\graphs" />
-      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\graphs\dijkstra" />
@@ -201,7 +199,10 @@
       <workItem from="1777396313762" duration="643000" />
       <workItem from="1777458121043" duration="21000" />
       <workItem from="1777544981277" duration="5635000" />
-      <workItem from="1777800335666" duration="7339000" />
+      <workItem from="1777800335666" duration="7491000" />
+      <workItem from="1777965003782" duration="20000" />
+      <workItem from="1777968896475" duration="789000" />
+      <workItem from="1778582017788" duration="1528000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -355,7 +356,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777896950522</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="portofolie exiceris til Dijkstra lavet">
+      <option name="closed" value="true" />
+      <created>1777908950423</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1777908950423</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,6 +389,7 @@
     <MESSAGE value="noter til bfs tilføjet og opg 1 i docs færdig" />
     <MESSAGE value="hentet de ny opdateringer" />
     <MESSAGE value="noter tilføjet" />
-    <option name="LAST_COMMIT_MESSAGE" value="noter tilføjet" />
+    <MESSAGE value="portofolie exiceris til Dijkstra lavet" />
+    <option name="LAST_COMMIT_MESSAGE" value="portofolie exiceris til Dijkstra lavet" />
   </component>
 </project>
