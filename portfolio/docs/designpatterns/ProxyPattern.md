@@ -45,7 +45,7 @@ public class ServiceProxy implements Service {
 
 ---
 
-## 💻 Eksempel i `searchandsort.Main`
+## 💻 Eksempel 
 
 ```java
 Service service = new ServiceProxy();

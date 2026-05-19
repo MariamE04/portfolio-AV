@@ -47,7 +47,7 @@ public class Sorter {
 
 ---
 
-## 💻 Eksempel i `searchandsort.Main`
+## 💻 Eksempel 
 
 ```java
 Sorter sorter = new Sorter();

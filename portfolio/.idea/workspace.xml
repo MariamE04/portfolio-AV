@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="hentet opdates fra projektet ind manuelt og lavet forberdelses opgaven under A*">
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/astar/CityAStar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphs/astar/CityNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/designpatterns/TemplateMethodPattern.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/designpatterns/designpatterns_preparation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/designpatterns/designpatterns_test_code.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio_exercises/designpatterns/designpatterns.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/lazy/EagerCalculations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/lazy/LazySums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/lazy/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/AdapterPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/AdapterPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/BuilderPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/BuilderPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Cases.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Cases.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Cheat sheet til cases.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Cheatsheet til cases.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/CommandPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/CommandPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/CompositePattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/CompositePattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/DecoratorPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/DecoratorPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/FactoryPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/FactoryPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Guide.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Kategorisering.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Kategorisering.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/ObserverPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/ObserverPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Oversigt.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Oversigt.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/ProxyPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/ProxyPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/SingletonPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/SingletonPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/StrategyPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/StrategyPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/designpatterns_exercises.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/designpatterns_exercises.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,45 +64,45 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AStar.executor": "Run",
-    "Application.BigOExamples.executor": "Run",
-    "Application.Book.executor": "Run",
-    "Application.CityAStar.executor": "Run",
-    "Application.CityDijkstra.executor": "Run",
-    "Application.Dijkstra.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MazeExercise.executor": "Run",
-    "Application.SearchStrategies.executor": "Run",
-    "Application.WoodHandler.executor": "Run",
-    "Application.algorithms.circularlinkedlist.Main.executor": "Run",
-    "Application.algorithms.floydexample.Main.executor": "Run",
-    "Application.algorithms.reversedlinkedlist.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/docs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AStar.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BigOExamples.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Book.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CityAStar.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CityDijkstra.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Dijkstra.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MazeExercise.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SearchStrategies.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WoodHandler.executor&quot;: &quot;Run&quot;,
+    &quot;Application.algorithms.circularlinkedlist.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.algorithms.floydexample.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.algorithms.reversedlinkedlist.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/docs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs" />
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs\designpatterns" />
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\algorithms\lazy" />
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio" />
-      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\graphs" />
-      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises\graphs" />
-      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs\graphs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\graphs\dijkstra" />
@@ -205,6 +226,13 @@
       <workItem from="1777965003782" duration="20000" />
       <workItem from="1777968896475" duration="789000" />
       <workItem from="1778582017788" duration="5043000" />
+      <workItem from="1778602319809" duration="6000" />
+      <workItem from="1778838322100" duration="1184000" />
+      <workItem from="1778867125493" duration="874000" />
+      <workItem from="1778926003608" duration="2143000" />
+      <workItem from="1779099666569" duration="9471000" />
+      <workItem from="1779174121878" duration="31000" />
+      <workItem from="1779206269851" duration="2027000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />

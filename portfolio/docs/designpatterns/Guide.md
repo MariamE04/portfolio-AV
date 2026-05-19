@@ -52,12 +52,14 @@ Når du står med et problem og tænker:
 - Skal jeg kunne skifte algoritme dynamisk?
 - Skal jeg indkapsle en handling som et objekt?
 - Skal flere objekter reagere på ændringer i ét objekt?
+- Har jeg et fast forløb med ét variabelt trin?
 - Vil jeg decouple afsender og modtager?
 
 ### Typiske mønstre:
 - **Strategy** – Udskiftbar adfærd
 - **Command** – Indkapslede handlinger
 - **Observer** – Notifikation til mange lyttere
+- **Template Method** – Fast skelet, variabelt trin
 
 ---
 
@@ -75,10 +77,12 @@ Når du står med et problem og tænker:
 
 - **Decorator** tilføjer *funktion* uden at ændre klassen
 - **Adapter** får noget gammelt til at *virke med noget nyt*
-- **Strategy** vælger *hvordan* noget gøres
+- **Strategy** vælger *hvordan* noget gøres – og kan skiftes ved runtime
+- **Template Method** låser *strukturen* fast – og lader subklassen udfylde ét trin
+- **Strategy vs Template Method** – komposition vs arv. Injicér eller arv?
 - **Command** vælger *hvad* der skal gøres – og *hvornår*
 - **Observer** reagerer automatisk på ændringer
-- **Composite** gør “del” og “helhed” ens at håndtere
+- **Composite** gør "del" og "helhed" ens at håndtere
 - **Proxy** står i vejen, men med god grund 😇
 
 ---

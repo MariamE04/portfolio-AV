@@ -29,7 +29,7 @@ public class Dog implements Animal {
 }
 ```
 
-## 💻 Eksempel i `searchandsort.Main`
+## 💻 Eksempel 
 ```java
 Animal dog = AnimalFactory.createAnimal("dog");
 dog.speak(); // 🐶 Woof!

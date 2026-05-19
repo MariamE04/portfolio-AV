@@ -12,7 +12,7 @@ og vi skal kunne fortryde nogle af dem.
 
 ---
 
-## 🧾 Case 3: Ukompatible interfaces
+## 🧾 Case 3: Inkompatible interfaces
 Vi har et gammelt regnskabssystem med en `printInvoiceOld()`-metode,  
 men det nye system forventer `generateInvoice()`.  
 Vi kan ikke ændre det gamle.
@@ -58,3 +58,10 @@ og vi vil kun instantiere den, hvis den faktisk skal bruges – og kun én gang.
 ## 🔀 Case 10: Skiftbar sortering
 Vi skal kunne sortere data,  
 men vil gerne skifte mellem forskellige sorteringsalgoritmer afhængigt af dataset.
+
+---
+
+## 📋 Case 11: Gentagen teststruktur
+Vi har fire metoder der tester forskellige sorteringsalgoritmer.  
+De gør alle det samme: opret liste, forbered data, kør algoritme, mål tid og print resultat.  
+Kun selve sorteringstrinnet er forskelligt.

@@ -29,3 +29,6 @@ Sikrer, at der kun findes én instans af en klasse – og giver global adgang ti
 
 ### **Observer**
 En ændring i ét objekt informerer automatisk alle de objekter, der 'observerer' det – typisk brugt i events.
+
+### **Template Method**
+Definerer skelettet af en algoritme i en superklasse – og lader subklasser udfylde de variable trin uden at ændre strukturen.
