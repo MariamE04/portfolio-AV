@@ -143,3 +143,16 @@ Opgaven er nu
 - Kør `Main` og sammenlign tiderne for bubble og quick sort.
 - `run()` er markeret `final`. Hvad betyder det? Prøv at fjerne `final` og override `run()` i en subklasse — hvad bliver muligt?
 - Hvad er forskellen på Template Method og almindelig nedarving?
+
+---
+**Adapter:**
+Adapter pattern passer til opgaven, fordi `PrinterAdapter` gør det muligt at bruge `OldPrinter` gennem `NewPrinter`-interfacet. Koden i `Main` behøver derfor ikke kende til `OldPrinter`.
+
+**Builder:**
+Builder pattern passer til opgaven, fordi `User.Builder` gør det muligt at oprette objekter trin for trin. Man kan vælge kun at sætte de nødvendige felter eller alle felter, og defaultværdier bliver automatisk brugt.
+
+**Command:**
+Command pattern passer til opgaven, fordi handlinger som at tænde og slukke lyset bliver pakket ind som kommandoobjekter. Det gør det muligt at gemme kommandoer og lave undo-funktionalitet.
+
+**Composite:**
+Composite pattern passer til opgaven, fordi både enkelte enemies og grupper af enemies behandles ens gennem `GameObject`-interfacet. En gruppe kan indeholde både enemies og andre grupper, hvilket skaber en træstruktur.

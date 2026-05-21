@@ -119,25 +119,16 @@ kan variere.
 
 ---
 
-### Observation 3 – Composite Pattern kunne bruges til grafstrukturen
+### Observation 3 –adapter
 Klasser som WeightedNode og CityNode består af noder, der indeholder andre noder som naboer.
 
 `private Map<WeightedNode, Integer> neighbors;`
 
 **Hvilket pattern?**
-- Composite Pattern
+- Adapter
 
 **Hvorfor?**
-- Composite bruges når individuelle objekter og grupper af objekter skal behandles ens.
-
-**En node kan ses som:**
-- et enkelt objekt
-- en del af en større grafstruktur
-
-**Hvad ville det løse?**
-- Mere fleksibel struktur
-- Nemmere traversal af grafer
-- Mere ens behandling af graf-komponenter
+- prope det ene objekt i det andet (tilpasse)
 
 ---
 

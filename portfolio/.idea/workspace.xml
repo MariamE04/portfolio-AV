@@ -4,31 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="hentet opdates fra projektet ind manuelt og lavet forberdelses opgaven under A*">
-      <change afterPath="$PROJECT_DIR$/docs/designpatterns/TemplateMethodPattern.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/designpatterns/designpatterns_preparation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/designpatterns/designpatterns_test_code.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio_exercises/designpatterns/designpatterns.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/lazy/EagerCalculations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/lazy/LazySums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/lazy/Main.java" afterDir="false" />
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="forberedelse (design Pattern) til torsdag lavet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/adapter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/builder/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/command/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/composite/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/decorator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/BFSStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/BubbleSortStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/DFSStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/GraphFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/GraphSearchStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/GraphSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/MainDijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/MainGraphSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/MainSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/QuickSortStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/SortStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/SortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/refactoring/WeightedNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/AdapterPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/AdapterPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/BuilderPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/BuilderPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Cases.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Cases.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Cheat sheet til cases.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Cheatsheet til cases.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/CommandPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/CommandPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/CompositePattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/CompositePattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/DecoratorPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/DecoratorPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/FactoryPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/FactoryPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Guide.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Kategorisering.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Kategorisering.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/ObserverPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/ObserverPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/Oversigt.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/Oversigt.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/ProxyPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/ProxyPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/SingletonPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/SingletonPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/StrategyPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/StrategyPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/designpatterns/designpatterns_exercises.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/designpatterns_exercises.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/designpatterns/designpatterns_preparation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/designpatterns_preparation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/designpatterns/designpatterns_test_code.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/designpatterns/designpatterns_test_code.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/designpatterns/builder/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/builder/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/designpatterns/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/designpatterns/command/LightOffCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/command/LightOffCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/designpatterns/command/LightOnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/command/LightOnCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/designpatterns/command/RemoteControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/command/RemoteControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +63,10 @@
     &quot;accountId&quot;: &quot;c67fbe6b-749e-4940-972d-44cc0d6e5789&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -64,57 +74,62 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AStar.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BigOExamples.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Book.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CityAStar.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CityDijkstra.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Dijkstra.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MazeExercise.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SearchStrategies.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WoodHandler.executor&quot;: &quot;Run&quot;,
-    &quot;Application.algorithms.circularlinkedlist.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.algorithms.floydexample.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.algorithms.reversedlinkedlist.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/docs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AStar.executor": "Run",
+    "Application.BigOExamples.executor": "Run",
+    "Application.Book.executor": "Run",
+    "Application.CityAStar.executor": "Run",
+    "Application.CityDijkstra.executor": "Run",
+    "Application.Dijkstra.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MazeExercise.executor": "Run",
+    "Application.SearchStrategies.executor": "Run",
+    "Application.WoodHandler.executor": "Run",
+    "Application.algorithms.circularlinkedlist.Main.executor": "Run",
+    "Application.algorithms.floydexample.Main.executor": "Run",
+    "Application.algorithms.reversedlinkedlist.Main.executor": "Run",
+    "Application.designpatterns.builder.Main.executor": "Run",
+    "Application.designpatterns.command.Main.executor": "Run",
+    "Application.designpatterns.composite.Main.executor": "Run",
+    "Application.designpatterns.decorator.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/src/main/java/designpatterns",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\designpatterns" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\docs\designpatterns" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\algorithms\lazy" />
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\portfolio_exercises" />
-      <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\graphs\dijkstra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CityAStar">
-    <configuration name="AStar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphs.astar.AStar" />
+  <component name="RunManager" selected="Application.designpatterns.decorator.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.adapter.Main" />
       <module name="portfolio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graphs.astar.*" />
+          <option name="PATTERN" value="designpatterns.adapter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CityAStar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphs.astar.CityAStar" />
+    <configuration name="designpatterns.builder.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.builder.Main" />
       <module name="portfolio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graphs.astar.*" />
+          <option name="PATTERN" value="designpatterns.builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,12 +150,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CityDijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphs.dijkstra.CityDijkstra" />
+    <configuration name="designpatterns.command.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.command.Main" />
       <module name="portfolio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graphs.dijkstra.*" />
+          <option name="PATTERN" value="designpatterns.command.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,12 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphs.dijkstra.Dijkstra" />
+    <configuration name="designpatterns.composite.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.composite.Main" />
       <module name="portfolio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graphs.dijkstra.*" />
+          <option name="PATTERN" value="designpatterns.composite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,12 +176,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchStrategies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphs.graphsearch.SearchStrategies" />
+    <configuration name="designpatterns.decorator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.decorator.Main" />
       <module name="portfolio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graphs.graphsearch.*" />
+          <option name="PATTERN" value="designpatterns.decorator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CityAStar" />
-        <item itemvalue="Application.AStar" />
-        <item itemvalue="Application.CityDijkstra" />
-        <item itemvalue="Application.Dijkstra" />
-        <item itemvalue="Application.SearchStrategies" />
+        <item itemvalue="Application.designpatterns.decorator.Main" />
+        <item itemvalue="Application.designpatterns.composite.Main" />
+        <item itemvalue="Application.designpatterns.command.Main" />
+        <item itemvalue="Application.designpatterns.builder.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +247,9 @@
       <workItem from="1778926003608" duration="2143000" />
       <workItem from="1779099666569" duration="9471000" />
       <workItem from="1779174121878" duration="31000" />
-      <workItem from="1779206269851" duration="2027000" />
+      <workItem from="1779206269851" duration="2191000" />
+      <workItem from="1779266548246" duration="3598000" />
+      <workItem from="1779358410584" duration="6214000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -402,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778584343359</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="forberedelse (design Pattern) til torsdag lavet">
+      <option name="closed" value="true" />
+      <created>1779208922949</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1779208922949</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,6 +454,7 @@
     <MESSAGE value="noter tilføjet" />
     <MESSAGE value="portofolie exiceris til Dijkstra lavet" />
     <MESSAGE value="hentet opdates fra projektet ind manuelt og lavet forberdelses opgaven under A*" />
-    <option name="LAST_COMMIT_MESSAGE" value="hentet opdates fra projektet ind manuelt og lavet forberdelses opgaven under A*" />
+    <MESSAGE value="forberedelse (design Pattern) til torsdag lavet" />
+    <option name="LAST_COMMIT_MESSAGE" value="forberedelse (design Pattern) til torsdag lavet" />
   </component>
 </project>
