@@ -1,0 +1,85 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam roundcorner 12
+
+title CareBridge - Simplified Class Diagram
+
+class Resident {
+    - residentId : Long
+    - name : String
+    - cpr : String
+    - gender : String
+    - age : int
+}
+
+class MedicationChart {
+    - chartId : Long
+    - createdAt : Date
+    - updatedAt : Date
+}
+
+class Medication {
+    - medicationId : Long
+    - name : String
+    - dosage : String
+    - startDate : Date
+    - endDate : Date
+    - deliveryTime : String
+    - notes : String
+
+    + updateDosage()
+}
+
+class Budget {
+    - budgetId : Long
+    - amount : double
+    - createdAt : Date
+}
+
+class AuditLog {
+    - logId : Long
+    - action : String
+    - timestamp : Date
+}
+
+class User {
+    - userId : Long
+    - name : String
+    - email : String
+    - role : String
+}
+
+class MedicationService {
+    + createMedication()
+    + updateMedication()
+    + deleteMedication()
+    + getMedication()
+}
+
+class AuditLoggerService {
+    + createLog()
+}
+
+class SessionManagerService {
+    + validateSession()
+    + timeoutSession()
+}
+
+class ConcurrencyValidatorService {
+    + validateUpdate()
+}
+
+Resident "1" -- "1" MedicationChart
+MedicationChart "1" -- "*" Medication
+Resident "1" -- "1" Budget
+Medication "1" -- "*" AuditLog
+User "1" -- "*" AuditLog
+
+MedicationService --> Medication
+AuditLoggerService --> AuditLog
+SessionManagerService --> User
+ConcurrencyValidatorService --> MedicationChart
+
+@enduml

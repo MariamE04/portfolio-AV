@@ -2,7 +2,7 @@ package reflection.annotations;
 
 import java.lang.reflect.Method;
 
-public class AccessController {
+public class OldAccessController {
 
     public static void invokeIfAuthorized(Object service, User user, String methodName) {
         try {

@@ -2,7 +2,7 @@
 
 ## 1. Strategy på A*
 
-Kig på klassen `graphs.astar.MazeSolver` eller din egen implementation 
+Kig på klassen `graphs astar MazeSolver` eller din egen implementation 
 af A* (portfolioopgave). Heuristikken er hardkodet i `MazeSolver` og formodentlig 
 også i din implementation og kan ikke skiftes
 ud uden at ændre i klassen selv.
@@ -14,6 +14,12 @@ Du kender Manhattan-afstand fra undervisningen. Du kan fx undersøge Euklidisk a
 eller overveje hvad der sker hvis heuristikken altid returnerer 0.
 
 
+---
+Jeg anvendte Strategy pattern til at gøre heuristikken i A* udskiftelig.
+Tidligere var Manhattan-afstanden hardcoded i MazeSolver, hvilket gjorde algoritmen ufleksibel.
+Ved at introducere et HeuristicStrategy-interface kan forskellige heuristikker som Manhattan,
+Euclidean og Zero udskiftes dynamisk uden at ændre selve algoritmen.
+Dette passer godt til Strategy pattern, da heuristikkerne repræsenterer forskellige algoritmer for samme adfærd.
 
 ---
 
@@ -24,7 +30,9 @@ Kig på klasserne `reflection.annotations.AccessController` og `reflection.annot
 Opgaven er nu at refaktorére koden så `AccessController` bliver et formelt Proxy pattern.
 
 
-
+---
+Jeg refaktorerede AccessController til et formelt Protection Proxy pattern ved at lade proxyen implementere samme interface
+som SecureService og kontrollere adgang før metodekald videresendes til den rigtige service.
 ---
 
 ## 3. Valgfrit pattern
