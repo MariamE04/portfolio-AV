@@ -4,8 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class WeightedNode {
+
     private String name;
-    // Kanterne er vægtede, så vi gemmer afstanden til naboerne i et map
+
+    // Kanterne er vægtede,
+    // så vi gemmer naboer og vægte i et map
     private Map<WeightedNode, Integer> neighbors;
 
     public WeightedNode(String name) {

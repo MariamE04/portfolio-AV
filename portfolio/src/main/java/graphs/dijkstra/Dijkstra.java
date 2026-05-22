@@ -5,20 +5,22 @@ import java.util.*;
 public class Dijkstra {
 
     public static void main(String[] args) {
-        WeightedNode S = new WeightedNode("S");
-        WeightedNode A = new WeightedNode("A");
-        WeightedNode B = new WeightedNode("B");
-        WeightedNode C = new WeightedNode("C");
-        WeightedNode D = new WeightedNode("D");
-        WeightedNode E = new WeightedNode("E");
-        WeightedNode F = new WeightedNode("F");
-        WeightedNode G = new WeightedNode("G");
-        WeightedNode H = new WeightedNode("H");
-        WeightedNode I = new WeightedNode("I");
-        WeightedNode J = new WeightedNode("J");
-        WeightedNode K = new WeightedNode("K");
-        WeightedNode L = new WeightedNode("L");
-        WeightedNode M = new WeightedNode("M");
+        NodeFactory factory = new NodeFactory();
+
+        WeightedNode S = factory.getNode("S");
+        WeightedNode A = factory.getNode("A");
+        WeightedNode B = factory.getNode("B");
+        WeightedNode C = factory.getNode("C");
+        WeightedNode D = factory.getNode("D");
+        WeightedNode E = factory.getNode("E");
+        WeightedNode F = factory.getNode("F");
+        WeightedNode G = factory.getNode("G");
+        WeightedNode H = factory.getNode("H");
+        WeightedNode I = factory.getNode("I");
+        WeightedNode J = factory.getNode("J");
+        WeightedNode K = factory.getNode("K");
+        WeightedNode L = factory.getNode("L");
+        WeightedNode M = factory.getNode("M");
 
         S.addNeighbor(A, 1);
         S.addNeighbor(B, 3);
