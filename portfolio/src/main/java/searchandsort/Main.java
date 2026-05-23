@@ -8,7 +8,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        // testComplexity();
+         testComplexity();
         // testLinearAndBinarySearch();
         // testListPerformance();
         // testSetPerformance();
@@ -21,11 +21,11 @@ public class Main {
         //testMergeInt();
 
        // testQuick(10, true, true);
-        testIntQuick(0, 4);
+       // testIntQuick(0, 4);
     }
 
     private static void testComplexity() {
-        int n = 10000; // justér for at demonstrere tydeligt
+        int n = 1000; // justér for at demonstrere tydeligt
 
         // O(1)
         long start = System.currentTimeMillis();
@@ -46,7 +46,7 @@ public class Main {
         System.out.println("Time for O(n): " + (stop - start) + " ms\n");
 
         // O(n²) - pas på med at vælge et for stort n!
-       /* n = 2000; // mindre n for kvadratisk!
+        /*n = 1000; // mindre n for kvadratisk!
         start = System.currentTimeMillis();
         BigOExamples.quadraticTime(n);
         stop = System.currentTimeMillis();

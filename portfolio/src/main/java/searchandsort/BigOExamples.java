@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 
 public class BigOExamples {
     public static void main(String[] args) {
-      /*  int n = 10; // Juster n for at se effekten
+       int n = 10; // Juster n for at se effekten
         System.out.println("O(1) - Konstant tid:");
         constantTime(n);
 
@@ -17,9 +17,9 @@ public class BigOExamples {
         System.out.println("\nO(n^2) - Kvadratisk tid:");
         quadraticTime(n);
 
-        System.out.println("--------"); */
+        System.out.println("--------");
 
-        int[] nums = new int[4];
+       /* int[] nums = new int[4];
         nums[0] = 12;
         nums[1] = 4;
         nums[2] = 8;
@@ -29,7 +29,7 @@ public class BigOExamples {
         myLog(1000);
         myLinear(44);
         // myQuadraticExample(nums);
-        // myBinarySearch(nums, 10);
+        // myBinarySearch(nums, 10); */
     }
 
     // O(1) - Konstant tid

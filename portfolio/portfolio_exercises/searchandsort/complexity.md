@@ -38,13 +38,6 @@ Mål og sammenlign:
 
 Forklar forskellen. Hvad er kompleksiteten for hvert kald, og hvorfor?
 
-### Indsættelse og sletning i ArrayList
-
-I øvelsen så vi at både indsættelse og sletning midt i en ArrayList koster O(n) — også selv om listen er sorteret og vi
-kan finde elementet hurtigt med O(log n).
-
-Skriv en kort forklaring (som kommentar i koden) på *hvorfor* det er tilfældet. Hvad sker der internt i ArrayList
-når du indsætter eller sletter midt i listen? Og hvorfor gælder det samme ikke for LinkedList?
 
 
 ### Comparable, equals() og hashcode()
@@ -85,7 +78,15 @@ Demonstrer forskellen på de to datastrukturer ved at indsætte, fjerne og finde
 **Derfor:**
 - HashSet er meget hurtigere til contains() end ArrayList.
 
-### OPG 2 add/ delete
+### OPG 2 add/ delete 
+**Indsættelse og sletning i ArrayList**
+
+I øvelsen så vi at både indsættelse og sletning midt i en ArrayList koster O(n) — også selv om listen er sorteret og vi
+kan finde elementet hurtigt med O(log n).
+
+Skriv en kort forklaring (som kommentar i koden) på *hvorfor* det er tilfældet. Hvad sker der internt i ArrayList
+når du indsætter eller sletter midt i listen? Og hvorfor gælder det samme ikke for LinkedList?
+
 **Vigtig pointe:**
 - Selvom LinkedList er god til indsættelse og sletning, er den stadig langsom i praksis, fordi man først skal finde positionen (O(n)).
 
