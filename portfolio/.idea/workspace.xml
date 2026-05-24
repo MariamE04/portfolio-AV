@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="fjernet ikke brugte filer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/searchandsort/complexity.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/searchandsort/complexity.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/BigOExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/BigOExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_exercises/searchandsort/sort.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/searchandsort/sort.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,47 +50,47 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AStar.executor": "Run",
-    "Application.BigOExamples.executor": "Run",
-    "Application.Book.executor": "Run",
-    "Application.CityAStar.executor": "Run",
-    "Application.CityDijkstra.executor": "Run",
-    "Application.Dijkstra.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MazeExercise.executor": "Run",
-    "Application.SearchStrategies.executor": "Run",
-    "Application.WoodHandler.executor": "Run",
-    "Application.algorithms.circularlinkedlist.Main.executor": "Run",
-    "Application.algorithms.floydexample.Main.executor": "Run",
-    "Application.algorithms.reversedlinkedlist.Main.executor": "Run",
-    "Application.designpatterns.builder.Main.executor": "Run",
-    "Application.designpatterns.command.Main.executor": "Run",
-    "Application.designpatterns.composite.Main.executor": "Run",
-    "Application.designpatterns.decorator.Main.executor": "Run",
-    "Application.designpatterns.factory.Main.executor": "Run",
-    "Application.reflection.annotations.Main.executor": "Run",
-    "Application.searchandsort.Main.executor": "Run",
-    "DefaultPlantUmlFileTemplate": "UML Class",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/src/main/java/designpatterns",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AStar.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BigOExamples.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Book.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CityAStar.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CityDijkstra.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Dijkstra.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MazeExercise.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SearchStrategies.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WoodHandler.executor&quot;: &quot;Run&quot;,
+    &quot;Application.algorithms.circularlinkedlist.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.algorithms.floydexample.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.algorithms.reversedlinkedlist.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.designpatterns.builder.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.designpatterns.command.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.designpatterns.composite.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.designpatterns.decorator.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.designpatterns.factory.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.reflection.annotations.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.searchandsort.Main.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/elmir/OneDrive/Dokumenter/4Sem/AV-mappe/portfolioOpgave/portfolio/src/main/java/designpatterns&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\designpatterns" />
@@ -103,7 +103,7 @@
       <recent name="C:\Users\elmir\OneDrive\Dokumenter\4Sem\AV-mappe\portfolioOpgave\portfolio\src\main\java\graphs\dijkstra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BigOExamples">
+  <component name="RunManager" selected="Application.CityDijkstra">
     <configuration name="BigOExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="searchandsort.BigOExamples" />
       <module name="portfolio" />
@@ -117,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphs.astar.DesignPattern.Main" />
+    <configuration name="CityAStar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graphs.astar.CityAStar" />
       <module name="portfolio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graphs.astar.DesignPattern.*" />
+          <option name="PATTERN" value="graphs.astar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="designpatterns.command.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designpatterns.command.Main" />
+    <configuration name="CityDijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graphs.dijkstra.CityDijkstra" />
       <module name="portfolio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="designpatterns.command.*" />
+          <option name="PATTERN" value="graphs.dijkstra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BigOExamples" />
+        <item itemvalue="Application.CityDijkstra" />
+        <item itemvalue="Application.CityAStar" />
         <item itemvalue="Application.searchandsort.Main" />
+        <item itemvalue="Application.BigOExamples" />
         <item itemvalue="Application.reflection.annotations.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.designpatterns.command.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +233,8 @@
       <workItem from="1779390083339" duration="3867000" />
       <workItem from="1779395922051" duration="141000" />
       <workItem from="1779450500912" duration="8303000" />
-      <workItem from="1779530555615" duration="1333000" />
+      <workItem from="1779530555615" duration="12054000" />
+      <workItem from="1779648321183" duration="1496000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -443,7 +444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779472599317</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fjernet ikke brugte filer">
+      <option name="closed" value="true" />
+      <created>1779531921497</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1779531921497</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

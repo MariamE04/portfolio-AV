@@ -6,28 +6,35 @@ class CityDijkstra {
 
     public static void main(String[] args) {
 
-        // Opretter byer (noder i grafen)
-        City a = new City("A");
-        City b = new City("B");
-        City c = new City("C");
-        City d = new City("D");
-        City e = new City("E");
-        City f = new City("F");
-        City g = new City("G");
-        City h = new City("H");
+        // Opretter byer
+        City nordby = new City("Nordby");
+        City sydby = new City("Sydby");
+        City østby = new City("Østby");
+        City vestby = new City("Vestby");
+        City midtby = new City("Midtby");
+        City havneby = new City("Havneby");
+        City skovby = new City("Skovby");
+        City strandby = new City("Strandby");
 
-        // Opretter veje mellem byer (rettede kanter med vægt)
-        a.addRoad(b, 4);
-        a.addRoad(c, 2);
-        b.addRoad(d, 5);
-        c.addRoad(d, 1);
-        d.addRoad(e, 3);
-        e.addRoad(f, 2);
-        f.addRoad(g, 1);
-        g.addRoad(h, 2);
+        // Opretter veje mellem byer
+        nordby.addRoad(midtby, 4);
+        nordby.addRoad(østby, 2);
 
-        // Finder korteste vej fra A til H
-        dijkstra(a, h);
+        østby.addRoad(skovby, 3);
+
+        midtby.addRoad(vestby, 5);
+        midtby.addRoad(sydby, 4);
+
+        vestby.addRoad(strandby, 3);
+
+        sydby.addRoad(havneby, 6);
+
+        skovby.addRoad(havneby, 2);
+
+        strandby.addRoad(havneby, 1);
+
+        // Finder korteste vej
+        dijkstra(nordby, havneby);
     }
 
     public static void dijkstra(City start, City goal) {
