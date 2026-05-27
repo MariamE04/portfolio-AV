@@ -25,3 +25,21 @@ public class Main {
         zeroSolver.solve();
     }
 }
+
+
+/*
+Strategy Pattern
+
+Problem:
+Heuristikken var tidligere hardkodet i MazeSolver,
+så algoritmen skulle ændres hver gang man ville bruge
+en ny heuristik.
+
+Løsning:
+Ved at bruge Strategy Pattern kan heuristikker
+udskiftes dynamisk gennem et interface.
+
+Hvorfor passer patternet her?
+Fordi forskellige heuristikker er forskellige algoritmer,
+som kan bruges på samme problem.
+*/

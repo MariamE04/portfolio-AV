@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="fjernet ikke brugte filer">
+    <list default="true" id="5da7ff78-79d1-4bb4-b874-6948e5a0762a" name="Changes" comment="så ændringer i opg beskrivelse og i graphs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/algorithms/algorithms.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_exercises/searchandsort/sort.md" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_exercises/searchandsort/sort.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/searchandsort/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="UML Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="UML Class" />
       </list>
     </option>
   </component>
@@ -234,7 +231,10 @@
       <workItem from="1779395922051" duration="141000" />
       <workItem from="1779450500912" duration="8303000" />
       <workItem from="1779530555615" duration="12054000" />
-      <workItem from="1779648321183" duration="1496000" />
+      <workItem from="1779648321183" duration="2364000" />
+      <workItem from="1779734648904" duration="634000" />
+      <workItem from="1779788894478" duration="135000" />
+      <workItem from="1779871566167" duration="1167000" />
     </task>
     <task id="LOCAL-00001" summary="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n)).">
       <option name="closed" value="true" />
@@ -452,14 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1779531921497</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="så ændringer i opg beskrivelse og i graphs">
+      <option name="closed" value="true" />
+      <created>1779649952300</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1779649952300</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Opgave 2 færdig -&#10;&#10;ArrayList er hurtig til opslag men langsom til indsættelse. LinkedList er langsom fordi man skal traversere. HashSet er hurtigst pga hashing (O(1)), mens TreeSet er langsommere fordi det er et balanceret træ (O(log n))." />
     <MESSAGE value="Opgave 2 færdig" />
     <MESSAGE value="ændring i Book" />
     <MESSAGE value="fikset min main." />
@@ -484,6 +491,7 @@
     <MESSAGE value="opg 1 og 2 til portfolio opgave er lavet mangler bare 3" />
     <MESSAGE value="opg 3 til portfolio opgave er lavet" />
     <MESSAGE value="fjernet ikke brugte filer" />
-    <option name="LAST_COMMIT_MESSAGE" value="fjernet ikke brugte filer" />
+    <MESSAGE value="så ændringer i opg beskrivelse og i graphs" />
+    <option name="LAST_COMMIT_MESSAGE" value="så ændringer i opg beskrivelse og i graphs" />
   </component>
 </project>
